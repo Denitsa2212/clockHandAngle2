@@ -27,7 +27,7 @@
 
     $var = 0.09;
     while (abs(clockHandAngle($hours . ':' . $minutes . ':' . $seconds) - $angle) > $var) {
-        $seconds += 1;
+        $seconds = $seconds + 1;
         if($seconds >= 60) {
             $seconds = 0;
             $minutes += 1;
