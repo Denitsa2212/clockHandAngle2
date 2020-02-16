@@ -9,9 +9,7 @@
 		if($hours > 12) {
 			$hours -= 12;
 		}
-    // Formula for finding angle
 		$angle = abs(30 * $hours + 0.5 * $minutes + ($seconds / 120) - (6 * $minutes + 0.1 * $seconds));
-    // Return the smaller angle
 		if ($angle < 360-$angle) {
 			return $angle;
 		}else{
